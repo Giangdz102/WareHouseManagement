@@ -5,6 +5,9 @@
     <Compile Update="LoginWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="UnitWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UserControlG\ControlBarUC.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
