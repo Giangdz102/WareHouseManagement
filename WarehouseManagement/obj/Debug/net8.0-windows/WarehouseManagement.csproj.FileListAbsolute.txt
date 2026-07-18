@@ -161,3 +161,5 @@ C:\Users\TG\Documents\PRN212\WarehouseManagement\WarehouseManagement\obj\Debug\n
 C:\Users\TG\Documents\PRN212\WarehouseManagement\WarehouseManagement\obj\Debug\net8.0-windows\UserControlG\ControlBarUC.g.cs
 C:\Users\TG\Documents\PRN212\WarehouseManagement\WarehouseManagement\obj\Debug\net8.0-windows\UserControlG\ControlBarUC.baml
 C:\Users\TG\Documents\PRN212\WarehouseManagement\WarehouseManagement\obj\Debug\net8.0-windows\WarehouseManagement.sourcelink.json
+C:\Users\TG\Documents\PRN212\WarehouseManagement\WarehouseManagement\obj\Debug\net8.0-windows\UnitWindow.g.cs
+C:\Users\TG\Documents\PRN212\WarehouseManagement\WarehouseManagement\obj\Debug\net8.0-windows\UnitWindow.baml

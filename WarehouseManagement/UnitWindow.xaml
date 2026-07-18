@@ -9,7 +9,7 @@
         xmlns:uc="clr-namespace:WarehouseManagement.UserControlG"
         ResizeMode="NoResize"
         WindowStyle="None"
-        mc:Ignorable="d"
+        
         Title="UnitWindow"
         Height="300"
         Width="400"

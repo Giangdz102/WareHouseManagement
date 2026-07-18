@@ -41,15 +41,16 @@ namespace WarehouseManagement
                     .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
                     .Build();
 
-                string adminEmail = config["AdminAccount:Email"];
-                string adminPassword = config["AdminAccount:Password"];
+                string adminUsername = "admin";
+                string adminPassword = "123";
 
-                if (username == adminEmail && password == adminPassword)
+                if (username == adminUsername && password == adminPassword)
                 {
                     labelError.Visibility = Visibility.Hidden;
                     MainWindow adminWindow = new MainWindow();
-                    this.Close();
                     adminWindow.Show();
+                    this.Close();
+                    
                     return;
                 }
 
