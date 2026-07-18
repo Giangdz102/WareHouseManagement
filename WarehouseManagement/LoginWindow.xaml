@@ -16,15 +16,65 @@
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
+
         <Grid Grid.Row="0">
             <uc:ControlBarUC></uc:ControlBarUC>
         </Grid>
-        <Canvas Grid.Row="1">
-            <Label Content="Đăng Nhập" Canvas.Left="339" Canvas.Top="71" Height="44" Width="144" FontFamily="Comic Sans MS" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold"/>
-            <TextBox x:Name="txtUsername" Canvas.Left="261" TextWrapping="Wrap" Canvas.Top="149" Width="300" Height="40" materialDesign:HintAssist.Hint="Username" FontSize="18"/>
-            <PasswordBox x:Name="txtPassword" Width="300" Height="40" materialDesign:HintAssist.Hint="Password"  HorizontalAlignment="Center" Canvas.Left="261" Canvas.Top="245" VerticalAlignment="Top" FontSize="18"/>
-            <Button x:Name="btnLogin" Content="Đăng nhập" Canvas.Left="299" Canvas.Top="327" HorizontalAlignment="Left" VerticalAlignment="Top" Width="224"  Style="{StaticResource MaterialDesignRaisedButton}" materialDesign:ButtonAssist.CornerRadius="18" Background="Lime" FontWeight="Bold" />
-            <Label x:Name="labelError" Content="Tên đăng nhập hoặc mật khẩu sai" Canvas.Left="318" Canvas.Top="395" Foreground="Red" Visibility="Hidden"/>
-        </Canvas>
+
+        <!-- ĐỔI CANVAS THÀNH GRID Ở ĐÂY -->
+        <Grid Grid.Row="1">
+
+            <!-- Dùng một StackPanel làm "hộp chứa", ép nó luôn nằm GIỮA Grid chính -->
+            <StackPanel HorizontalAlignment="Center" 
+                    VerticalAlignment="Center" 
+                    Width="300">
+                <!-- Độ rộng của Form bằng đúng độ rộng TextBox của bạn -->
+
+                <!-- Tiêu đề Đăng Nhập (Bỏ Canvas.Left/Top, dùng Margin bên dưới để tạo khoảng cách) -->
+                <Label Content="Đăng Nhập" 
+                   Height="44" 
+                   FontFamily="Comic Sans MS" 
+                   FontSize="24" 
+                   HorizontalAlignment="Center" 
+                   FontWeight="Bold"
+                   Margin="0,0,0,30"/>
+
+                <!-- Ô Username -->
+                <TextBox x:Name="txtUsername" 
+                     TextWrapping="Wrap" 
+                     Height="40" 
+                     materialDesign:HintAssist.Hint="Username" 
+                     FontSize="18"
+                     Margin="0,0,0,20"/>
+
+                <!-- Ô Password -->
+                <PasswordBox x:Name="txtPassword" 
+                         Height="40" 
+                         materialDesign:HintAssist.Hint="Password"  
+                         FontSize="18"
+                         Margin="0,0,0,30"/>
+
+                <!-- Nút Đăng nhập (Căn giữa so với Form hoặc co giãn đầy Form tùy bạn) -->
+                <Button x:Name="btnLogin" 
+                    Content="Đăng nhập" 
+                    HorizontalAlignment="Center"
+                    Width="224" 
+                    Height="40"
+                    Style="{StaticResource MaterialDesignRaisedButton}" 
+                    materialDesign:ButtonAssist.CornerRadius="18" 
+                    Background="Lime" 
+                    FontWeight="Bold"
+                    Margin="0,0,0,15"/>
+
+                <!-- Nhãn hiển thị lỗi -->
+                <Label x:Name="labelError" 
+                   Content="Tên đăng nhập hoặc mật khẩu sai" 
+                   HorizontalAlignment="Center"
+                   Foreground="Red" 
+                   Visibility="Hidden"/>
+
+            </StackPanel>
+
+        </Grid>
     </Grid>
 </Window>

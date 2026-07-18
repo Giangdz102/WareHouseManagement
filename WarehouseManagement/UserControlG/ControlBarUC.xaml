@@ -8,44 +8,47 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <materialDesign:ColorZone
-        Mode="PrimaryLight"
-        Padding="16">
+        <materialDesign:ColorZone Mode="PrimaryLight">
 
             <DockPanel>
 
                 <StackPanel DockPanel.Dock="Right"
-                        Background="Transparent"
-                        Orientation="Horizontal">
+                            Background="Transparent"
+                            Orientation="Horizontal">
 
+                    <StackPanel.Resources>
+                        <Style TargetType="Button">
+                            <Setter Property="Margin" Value="2 4 2 4"></Setter>
+                            <Setter Property="Width" Value="40"></Setter>
+                        </Style>
+                    </StackPanel.Resources>
+                    
                     <Button ToolTip="Đóng"
-                        ToolBar.OverflowMode="AsNeeded">
-                        <materialDesign:PackIcon Kind="ContentCut" />
+                            ToolBar.OverflowMode="AsNeeded"
+                            Background="#9A67EA" Click="Button_Click_2">
+                        <materialDesign:PackIcon Kind="WindowMinimize" />
                     </Button>
 
                     <Button ToolTip="Đóng"
-                        ToolBar.OverflowMode="AsNeeded">
-                        <materialDesign:PackIcon Kind="ContentCut" />
+                            ToolBar.OverflowMode="AsNeeded"
+                            Background="#9A67EA" Click="Button_Click_1">
+                        <materialDesign:PackIcon Kind="WindowMaximize" />
                     </Button>
 
                     <Button ToolTip="Đóng"
-                        ToolBar.OverflowMode="AsNeeded">
-                        <materialDesign:PackIcon Kind="ContentCut" />
+                            ToolBar.OverflowMode="AsNeeded"
+                            Background="OrangeRed" Click="Button_Click">
+                        <materialDesign:PackIcon Kind="WindowClose" />
                     </Button>
 
                 </StackPanel>
 
                 <StackPanel DockPanel.Dock="Left"
-                        Orientation="Horizontal">
+                            Orientation="Horizontal">
 
-                    <ToggleButton
-                    Style="{DynamicResource MaterialDesignHamburgerToggleButton}" />
+                    <ToggleButton Style="{DynamicResource MaterialDesignHamburgerToggleButton}" />
 
-                    <TextBlock
-                    VerticalAlignment="Center"
-                    Margin="16 0 0 0">
-                    Material Design In XAML Toolkit
-                    </TextBlock>
+                   
 
                 </StackPanel>
 
