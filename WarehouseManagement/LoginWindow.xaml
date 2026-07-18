@@ -64,7 +64,8 @@
                     materialDesign:ButtonAssist.CornerRadius="18" 
                     Background="Lime" 
                     FontWeight="Bold"
-                    Margin="0,0,0,15"/>
+                    Margin="0,0,0,15"
+                        Click="btnLogin_Click" />
 
                 <!-- Nhãn hiển thị lỗi -->
                 <Label x:Name="labelError" 

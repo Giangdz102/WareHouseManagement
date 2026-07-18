@@ -20,5 +20,11 @@ namespace WarehouseManagement
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            UnitWindow unitWindow = new UnitWindow();
+            unitWindow.Show();
+        }
     }
 }

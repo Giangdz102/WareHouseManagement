@@ -121,7 +121,11 @@
                     <Button Grid.Column="3"
                            
                             Background="LightCyan"
-                            ToolTip="Đơn vị đo">
+                            ToolTip="Đơn vị đo"
+                            HorizontalAlignment="Left"
+                            Margin="2,4,0,4"
+                            Width="110"
+                            Click="Button_Click">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition></RowDefinition>
