@@ -8,6 +8,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WarehouseManagement.Models;
+using WarehouseManagement.ViewModel;
 
 namespace WarehouseManagement
 {
@@ -16,9 +18,19 @@ namespace WarehouseManagement
     /// </summary>
     public partial class MainWindow : Window
     {
+        //MainViewModel MV = new MainViewModel();
         public MainWindow()
         {
             InitializeComponent();
+            TonKhoData();
+
+        }
+
+        private void TonKhoData()
+        {
+            MainViewModel MV = new MainViewModel();
+            LvTonKho.ItemsSource = MV.TonKhoData();
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

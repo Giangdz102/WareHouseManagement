@@ -25,6 +25,7 @@ namespace WarehouseManagement
         public LoginWindow()
         {
             InitializeComponent();
+            
         }
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
@@ -33,7 +34,7 @@ namespace WarehouseManagement
             string password = txtPassword.Password.Trim();
             if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ Email và Mật khẩu!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Vui lòng nhập đầy đủ Tài khoản và Mật khẩu!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
             try
@@ -50,6 +51,7 @@ namespace WarehouseManagement
                     labelError.Visibility = Visibility.Hidden;
                     MainWindow adminWindow = new MainWindow();
                     adminWindow.Show();
+
                     this.Close();
                 }
                 else
