@@ -32,9 +32,20 @@
             <!--elements binding select-->
             <materialDesign:Card Grid.Row="0" Margin="5">
                 <Grid>
-                    <TextBox VerticalAlignment="Center"
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" VerticalAlignment="Center"
                              Margin="5"
-                             Text="{Binding DisplayName , UpdateSourceTrigger=PropertyChanged}"
+                             Text="{Binding SelectedItem.Id , ElementName=LvUnit}"
+                             x:Name="unitId"
+                             IsReadOnly="True"
+                             materialDesign:HintAssist.Hint="ID"
+                             Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                    <TextBox Grid.Row="1" VerticalAlignment="Center"
+                             Margin="5"
+                             Text="{Binding SelectedItem.DisplayName , ElementName=LvUnit}" x:Name="unitName"
                              materialDesign:HintAssist.Hint="Tên đơn vị đo"
                              Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
                 </Grid>
@@ -46,21 +57,24 @@
                     <Button Content="Thêm"
                             Command="{Binding AddCommand}"
                             Margin="5"
-                            Width="100"></Button>
+                            Width="100"
+                            Click="Button_Click"></Button>
                     <Button Content="Sửa"
                             Command="{Binding EditCommand}"
                             Margin="5"
-                            Width="100"></Button>
+                            Width="100"
+                            Click="Button_Click_1"></Button>
                     <Button Content="Xóa"
                             Command="{Binding DeleteCommand}"
                             Margin="5"
-                            Width="100"></Button>
+                            Width="100"
+                            Click="Button_Click_2"></Button>
                 </WrapPanel>
             </materialDesign:Card>
 
             <materialDesign:Card Grid.Row="2" VerticalAlignment="Stretch" Margin="5">
                 <ScrollViewer VerticalScrollBarVisibility="Auto">
-                    <ListView ItemsSource="{Binding List}"
+                    <ListView x:Name="LvUnit"
                               SelectedItem="{Binding SelectedItem,Mode=OneWayToSource}">
                         <ListView.View>
                             <GridView>

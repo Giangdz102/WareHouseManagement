@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\TG\\Documents\\PRN212\\WarehouseManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6EF8C51F-E6C5-4231-AF18-7DF0C9051601}|WarehouseManagement\\WarehouseManagement.csproj|c:\\users\\tg\\documents\\prn212\\warehousemanagement\\warehousemanagement\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6EF8C51F-E6C5-4231-AF18-7DF0C9051601}|WarehouseManagement\\WarehouseManagement.csproj|solutionrelative:warehousemanagement\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{6EF8C51F-E6C5-4231-AF18-7DF0C9051601}|WarehouseManagement\\WarehouseManagement.csproj|c:\\users\\tg\\documents\\prn212\\warehousemanagement\\warehousemanagement\\unitwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EF8C51F-E6C5-4231-AF18-7DF0C9051601}|WarehouseManagement\\WarehouseManagement.csproj|solutionrelative:warehousemanagement\\unitwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EF8C51F-E6C5-4231-AF18-7DF0C9051601}|WarehouseManagement\\WarehouseManagement.csproj|c:\\users\\tg\\documents\\prn212\\warehousemanagement\\warehousemanagement\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EF8C51F-E6C5-4231-AF18-7DF0C9051601}|WarehouseManagement\\WarehouseManagement.csproj|solutionrelative:warehousemanagement\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EF8C51F-E6C5-4231-AF18-7DF0C9051601}|WarehouseManagement\\WarehouseManagement.csproj|c:\\users\\tg\\documents\\prn212\\warehousemanagement\\warehousemanagement\\unitwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6EF8C51F-E6C5-4231-AF18-7DF0C9051601}|WarehouseManagement\\WarehouseManagement.csproj|solutionrelative:warehousemanagement\\unitwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EF8C51F-E6C5-4231-AF18-7DF0C9051601}|WarehouseManagement\\WarehouseManagement.csproj|c:\\users\\tg\\documents\\prn212\\warehousemanagement\\warehousemanagement\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6EF8C51F-E6C5-4231-AF18-7DF0C9051601}|WarehouseManagement\\WarehouseManagement.csproj|solutionrelative:warehousemanagement\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{6EF8C51F-E6C5-4231-AF18-7DF0C9051601}|WarehouseManagement\\WarehouseManagement.csproj|c:\\users\\tg\\documents\\prn212\\warehousemanagement\\warehousemanagement\\userwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6EF8C51F-E6C5-4231-AF18-7DF0C9051601}|WarehouseManagement\\WarehouseManagement.csproj|solutionrelative:warehousemanagement\\userwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EF8C51F-E6C5-4231-AF18-7DF0C9051601}|WarehouseManagement\\WarehouseManagement.csproj|c:\\users\\tg\\documents\\prn212\\warehousemanagement\\warehousemanagement\\viewmodel\\unitviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EF8C51F-E6C5-4231-AF18-7DF0C9051601}|WarehouseManagement\\WarehouseManagement.csproj|solutionrelative:warehousemanagement\\viewmodel\\unitviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EF8C51F-E6C5-4231-AF18-7DF0C9051601}|WarehouseManagement\\WarehouseManagement.csproj|c:\\users\\tg\\documents\\prn212\\warehousemanagement\\warehousemanagement\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,8 +27,16 @@
       "RelativeMoniker": "D:0:0:{6EF8C51F-E6C5-4231-AF18-7DF0C9051601}|WarehouseManagement\\WarehouseManagement.csproj|solutionrelative:warehousemanagement\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EF8C51F-E6C5-4231-AF18-7DF0C9051601}|WarehouseManagement\\WarehouseManagement.csproj|c:\\users\\tg\\documents\\prn212\\warehousemanagement\\warehousemanagement\\models\\tonkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EF8C51F-E6C5-4231-AF18-7DF0C9051601}|WarehouseManagement\\WarehouseManagement.csproj|solutionrelative:warehousemanagement\\models\\tonkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EF8C51F-E6C5-4231-AF18-7DF0C9051601}|WarehouseManagement\\WarehouseManagement.csproj|c:\\users\\tg\\documents\\prn212\\warehousemanagement\\warehousemanagement\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EF8C51F-E6C5-4231-AF18-7DF0C9051601}|WarehouseManagement\\WarehouseManagement.csproj|solutionrelative:warehousemanagement\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EF8C51F-E6C5-4231-AF18-7DF0C9051601}|WarehouseManagement\\WarehouseManagement.csproj|c:\\users\\tg\\documents\\prn212\\warehousemanagement\\warehousemanagement\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EF8C51F-E6C5-4231-AF18-7DF0C9051601}|WarehouseManagement\\WarehouseManagement.csproj|solutionrelative:warehousemanagement\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EF8C51F-E6C5-4231-AF18-7DF0C9051601}|WarehouseManagement\\WarehouseManagement.csproj|c:\\users\\tg\\documents\\prn212\\warehousemanagement\\warehousemanagement\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6EF8C51F-E6C5-4231-AF18-7DF0C9051601}|WarehouseManagement\\WarehouseManagement.csproj|solutionrelative:warehousemanagement\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,49 +46,100 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\TG\\Documents\\PRN212\\WarehouseManagement\\WarehouseManagement\\LoginWindow.xaml.cs",
-              "RelativeDocumentMoniker": "WarehouseManagement\\LoginWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\TG\\Documents\\PRN212\\WarehouseManagement\\WarehouseManagement\\LoginWindow.xaml.cs",
-              "RelativeToolTip": "WarehouseManagement\\LoginWindow.xaml.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAvAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "UnitWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\TG\\Documents\\PRN212\\WarehouseManagement\\WarehouseManagement\\UnitWindow.xaml",
+              "RelativeDocumentMoniker": "WarehouseManagement\\UnitWindow.xaml",
+              "ToolTip": "C:\\Users\\TG\\Documents\\PRN212\\WarehouseManagement\\WarehouseManagement\\UnitWindow.xaml",
+              "RelativeToolTip": "WarehouseManagement\\UnitWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-07-22T16:56:33.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\TG\\Documents\\PRN212\\WarehouseManagement\\WarehouseManagement\\UnitWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WarehouseManagement\\UnitWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\TG\\Documents\\PRN212\\WarehouseManagement\\WarehouseManagement\\UnitWindow.xaml.cs",
+              "RelativeToolTip": "WarehouseManagement\\UnitWindow.xaml.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAcwFoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-22T04:40:27.501Z",
+              "WhenOpened": "2026-07-22T16:55:49.349Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "LoginWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\TG\\Documents\\PRN212\\WarehouseManagement\\WarehouseManagement\\LoginWindow.xaml",
-              "RelativeDocumentMoniker": "WarehouseManagement\\LoginWindow.xaml",
-              "ToolTip": "C:\\Users\\TG\\Documents\\PRN212\\WarehouseManagement\\WarehouseManagement\\LoginWindow.xaml",
-              "RelativeToolTip": "WarehouseManagement\\LoginWindow.xaml",
+              "Title": "UserWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\TG\\Documents\\PRN212\\WarehouseManagement\\WarehouseManagement\\UserWindow.xaml",
+              "RelativeDocumentMoniker": "WarehouseManagement\\UserWindow.xaml",
+              "ToolTip": "C:\\Users\\TG\\Documents\\PRN212\\WarehouseManagement\\WarehouseManagement\\UserWindow.xaml",
+              "RelativeToolTip": "WarehouseManagement\\UserWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-07-22T04:40:26.545Z",
+              "WhenOpened": "2026-07-22T16:55:48.106Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "UnitViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\TG\\Documents\\PRN212\\WarehouseManagement\\WarehouseManagement\\ViewModel\\UnitViewModel.cs",
+              "RelativeDocumentMoniker": "WarehouseManagement\\ViewModel\\UnitViewModel.cs",
+              "ToolTip": "C:\\Users\\TG\\Documents\\PRN212\\WarehouseManagement\\WarehouseManagement\\ViewModel\\UnitViewModel.cs",
+              "RelativeToolTip": "WarehouseManagement\\ViewModel\\UnitViewModel.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCoAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-22T16:54:56.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\TG\\Documents\\PRN212\\WarehouseManagement\\WarehouseManagement\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WarehouseManagement\\LoginWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\TG\\Documents\\PRN212\\WarehouseManagement\\WarehouseManagement\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "WarehouseManagement\\LoginWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-22T16:53:58.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\TG\\Documents\\PRN212\\WarehouseManagement\\WarehouseManagement\\ViewModel\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "WarehouseManagement\\ViewModel\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\TG\\Documents\\PRN212\\WarehouseManagement\\WarehouseManagement\\ViewModel\\LoginViewModel.cs",
+              "RelativeToolTip": "WarehouseManagement\\ViewModel\\LoginViewModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-22T16:51:35.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\TG\\Documents\\PRN212\\WarehouseManagement\\WarehouseManagement\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WarehouseManagement\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\TG\\Documents\\PRN212\\WarehouseManagement\\WarehouseManagement\\MainWindow.xaml.cs",
               "RelativeToolTip": "WarehouseManagement\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAAB4AAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAB8AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-22T04:39:03.775Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\TG\\Documents\\PRN212\\WarehouseManagement\\WarehouseManagement\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WarehouseManagement\\MainWindow.xaml",
@@ -89,25 +152,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "TonKho.cs",
-              "DocumentMoniker": "C:\\Users\\TG\\Documents\\PRN212\\WarehouseManagement\\WarehouseManagement\\Models\\TonKho.cs",
-              "RelativeDocumentMoniker": "WarehouseManagement\\Models\\TonKho.cs",
-              "ToolTip": "C:\\Users\\TG\\Documents\\PRN212\\WarehouseManagement\\WarehouseManagement\\Models\\TonKho.cs",
-              "RelativeToolTip": "WarehouseManagement\\Models\\TonKho.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-22T04:15:10.469Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "C:\\Users\\TG\\Documents\\PRN212\\WarehouseManagement\\WarehouseManagement\\ViewModel\\MainViewModel.cs",
               "RelativeDocumentMoniker": "WarehouseManagement\\ViewModel\\MainViewModel.cs",
               "ToolTip": "C:\\Users\\TG\\Documents\\PRN212\\WarehouseManagement\\WarehouseManagement\\ViewModel\\MainViewModel.cs",
               "RelativeToolTip": "WarehouseManagement\\ViewModel\\MainViewModel.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAAADYAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-22T04:12:56.155Z",
               "EditorCaption": ""

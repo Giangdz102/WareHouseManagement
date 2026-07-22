@@ -21,7 +21,7 @@ namespace WarehouseManagement
     public partial class LoginWindow : Window
     {
         QuanLyKhoContext QLK = new QuanLyKhoContext();
-        MainViewModel MV = new MainViewModel();
+        LoginViewModel MV = new LoginViewModel();
         public LoginWindow()
         {
             InitializeComponent();
