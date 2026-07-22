@@ -11,7 +11,7 @@
         WindowStyle="None"
         
         Title="UnitWindow"
-        Height="300"
+        Height="500"
         Width="400"
         WindowStartupLocation="CenterScreen">
     <Grid>
@@ -34,7 +34,7 @@
                 <Grid>
                     <TextBox VerticalAlignment="Center"
                              Margin="5"
-                             Text="{Binding DisplayName}"
+                             Text="{Binding DisplayName , UpdateSourceTrigger=PropertyChanged}"
                              materialDesign:HintAssist.Hint="Tên đơn vị đo"
                              Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
                 </Grid>
@@ -58,18 +58,21 @@
                 </WrapPanel>
             </materialDesign:Card>
 
-            <materialDesign:Card Grid.Row="2" VerticalAlignment="Stretch"
-                                 Margin="5">
-                <ListView ItemsSource="{Binding List}" SelectedItem="{Binding SelectedItem,Mode=OneWayToSource}">
-                    <ListView.View>
-                        <GridView>
-                            <GridViewColumn Header="Id"
-                                            DisplayMemberBinding="{Binding Id}"></GridViewColumn>
-                            <GridViewColumn Header="Tên đơn vị đo"
-                                            DisplayMemberBinding="{Binding DisplayName}"></GridViewColumn>
-                        </GridView>
-                    </ListView.View>
-                </ListView>
+            <materialDesign:Card Grid.Row="2" VerticalAlignment="Stretch" Margin="5">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <ListView ItemsSource="{Binding List}"
+                              SelectedItem="{Binding SelectedItem,Mode=OneWayToSource}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Id"
+                                                DisplayMemberBinding="{Binding Id}"></GridViewColumn>
+                                <GridViewColumn Header="Tên đơn vị đo"
+                                                DisplayMemberBinding="{Binding DisplayName}"></GridViewColumn>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </ScrollViewer>
+                
             </materialDesign:Card>
         </Grid>
     </Grid>

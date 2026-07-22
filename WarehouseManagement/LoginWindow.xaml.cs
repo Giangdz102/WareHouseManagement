@@ -14,12 +14,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using WarehouseManagement.Models;
+using WarehouseManagement.ViewModel;
 namespace WarehouseManagement
 {
     
     public partial class LoginWindow : Window
     {
         QuanLyKhoContext QLK = new QuanLyKhoContext();
+        MainViewModel MV = new MainViewModel();
         public LoginWindow()
         {
             InitializeComponent();
@@ -36,36 +38,25 @@ namespace WarehouseManagement
             }
             try
             {
-                IConfiguration config = new ConfigurationBuilder()
-                    .SetBasePath(Directory.GetCurrentDirectory())
-                    .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-                    .Build();
+                
 
-                string adminUsername = "admin";
-                string adminPassword = "123";
+                
 
-                if (username == adminUsername && password == adminPassword)
+                
+
+                User loggedInCustomer = MV.GetUserByEmailAndPassword(username, password);
+                if (loggedInCustomer != null)
                 {
                     labelError.Visibility = Visibility.Hidden;
                     MainWindow adminWindow = new MainWindow();
                     adminWindow.Show();
                     this.Close();
-                    
-                    return;
                 }
-
-                //Customer loggedInCustomer = CM.GetCustomerByEmailAndPassword(email, password);
-                //if (loggedInCustomer != null)
-                //{
-                //    CustomerDashboard customerDashboard = new CustomerDashboard(loggedInCustomer);
-                //    this.Close();
-                //    customerDashboard.Show();
-                //}
-                //else
-                //{
-                //    labelError.Visibility = Visibility.Visible;
-                //    txtPassword.Clear();
-                //}
+                else
+                {
+                    labelError.Visibility = Visibility.Visible;
+                    txtPassword.Clear();
+                }
             }
             catch (Exception ex)
             {

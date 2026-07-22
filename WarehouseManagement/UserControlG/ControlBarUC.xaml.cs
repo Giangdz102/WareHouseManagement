@@ -19,16 +19,29 @@ namespace WarehouseManagement.UserControlG
 
     public partial class ControlBarUC : UserControl
     {
-        public ControlBarVM ViewModel { get; set; }
+        
         public ControlBarUC()
         {
             InitializeComponent();
-            this.DataContext = ViewModel = new ControlBarVM();
+            this.Loaded += ControlBarUC_Loaded;
         }
+        private void ControlBarUC_Loaded(object sender, RoutedEventArgs e)
+        {
+            
+            Window parentWindow = Window.GetWindow(this);
 
+            if (parentWindow != null)
+            {
+                
+                lblTitle.Text = parentWindow.Title;
+            }
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            System.Windows.Application.Current.Shutdown();
+            Window parentWindow = Window.GetWindow(this);
+            if (parentWindow != null) {
+            parentWindow.Close();
+            }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

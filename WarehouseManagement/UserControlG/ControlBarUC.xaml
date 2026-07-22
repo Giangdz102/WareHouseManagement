@@ -47,8 +47,12 @@
                             Orientation="Horizontal">
 
                     <ToggleButton Style="{DynamicResource MaterialDesignHamburgerToggleButton}" />
+                    <TextBlock x:Name="lblTitle"
+                               VerticalAlignment="Center"
+                               Margin="10 0 0 0"
+                               FontWeight="Bold"
+                               FontSize="14" />
 
-                   
 
                 </StackPanel>
 
