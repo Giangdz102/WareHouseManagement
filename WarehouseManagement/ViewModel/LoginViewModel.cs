@@ -12,7 +12,7 @@ namespace WarehouseManagement.ViewModel
     class LoginViewModel
     {
         QuanLyKhoContext qlk = new QuanLyKhoContext();
-        public User GetUserByEmailAndPassword(string username, string password)
+        public User GetUserByUserNameAndPassword(string username, string password)
         {
             User user = new User();
             try

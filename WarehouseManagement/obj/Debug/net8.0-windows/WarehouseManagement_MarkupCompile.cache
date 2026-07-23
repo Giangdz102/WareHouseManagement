@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 C:\Users\TG\Documents\PRN212\WarehouseManagement\WarehouseManagement\App.xaml
-10907236700
+11-1173983888
 22142178043
-28-1876810400
+34491321882
 237957275108
-CustomerWindow.xaml;InputWindow.xaml;LoginWindow.xaml;MainWindow.xaml;ObjectWindow.xaml;OutputWindow.xaml;SuplierWindow.xaml;UnitWindow.xaml;UserControlG\ControlBarUC.xaml;UserWindow.xaml;
+ChangePasswordWindow.xaml;CustomerWindow.xaml;InputWindow.xaml;LoginWindow.xaml;MainWindow.xaml;ObjectWindow.xaml;OutputWindow.xaml;SuplierWindow.xaml;UnitWindow.xaml;UserControlG\ControlBarUC.xaml;UserWindow.xaml;
 
 False
 

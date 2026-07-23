@@ -11,7 +11,7 @@
         WindowStyle="None"
         Title="Người dùng"
         Height="500"
-        Width="700"
+        Width="750"
         WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
@@ -61,14 +61,12 @@
                              materialDesign:HintAssist.Hint="Giá xuất"
                              Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
 
-
-
-
-                    <TextBox VerticalAlignment="Center"
-                             Margin="5 5 15 5"
-                             Text="{Binding Status , UpdateSourceTrigger=PropertyChanged}"
-                             materialDesign:HintAssist.Hint="Trạng thái nhập"
-                             Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                    <ComboBox materialDesign:HintAssist.Hint="Trạng thái nhập"
+                              Margin="5 5 15 5"
+                              ItemsSource="{Binding Suplier}"
+                              SelectedItem="{Binding SelectedSuplier, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                              IsEditable="True"
+                              Style="{StaticResource MaterialDesignFloatingHintComboBox}"></ComboBox>
 
 
 

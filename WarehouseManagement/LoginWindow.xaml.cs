@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -39,17 +39,13 @@ namespace WarehouseManagement
             }
             try
             {
-                
+               
 
-                
-
-                
-
-                User loggedInCustomer = MV.GetUserByEmailAndPassword(username, password);
+                User loggedInCustomer = MV.GetUserByUserNameAndPassword(username, password);
                 if (loggedInCustomer != null)
                 {
                     labelError.Visibility = Visibility.Hidden;
-                    MainWindow adminWindow = new MainWindow();
+                    MainWindow adminWindow = new MainWindow(loggedInCustomer);
                     adminWindow.Show();
 
                     this.Close();

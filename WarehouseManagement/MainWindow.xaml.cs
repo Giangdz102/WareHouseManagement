@@ -1,4 +1,4 @@
-﻿using System.Text;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,11 +19,26 @@ namespace WarehouseManagement
     public partial class MainWindow : Window
     {
         //MainViewModel MV = new MainViewModel();
+        private User? currentUser;
+
         public MainWindow()
         {
             InitializeComponent();
             TonKhoData();
+        }
 
+        public MainWindow(User user) : this()
+        {
+            currentUser = user;
+            CheckUserRole();
+        }
+
+        private void CheckUserRole()
+        {
+            if (currentUser == null || currentUser.IdRole != 1)
+            {
+                btnNguoiDung.Visibility = Visibility.Collapsed;
+            }
         }
 
         private void TonKhoData()

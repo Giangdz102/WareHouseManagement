@@ -27,6 +27,7 @@ namespace WarehouseManagement.ViewModel
                         return;
                     }
                 }
+         
                 qlk.Units.Add(unit);
                 qlk.SaveChanges();
                 MessageBox.Show("Thêm đơn vị thành công!", "Thêm đơn vị", MessageBoxButton.OK, MessageBoxImage.Information);

@@ -37,6 +37,11 @@ namespace WarehouseManagement
         {
             try
             {
+                if(string.IsNullOrWhiteSpace(unitName.Text))
+                {
+                    MessageBox.Show("Tên đơn vị không được để trống.", "Lỗi nhập liệu", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
                 Unit unit = new Unit
                 {
                     DisplayName = unitName.Text
@@ -77,7 +82,7 @@ namespace WarehouseManagement
                 Unit unit = new Unit
                 {
                     Id = int.Parse(unitId.Text),
-                    DisplayName = unitName.Text
+                    
                 };
                 MV.DeleteUnit(unit);
                 LoadedData();
