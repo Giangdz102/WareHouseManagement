@@ -61,7 +61,7 @@ namespace WarehouseManagement
             {
                 if (string.IsNullOrEmpty(txtUserId.Text))
                 {
-                    MessageBox.Show("Vui chọn 1 User!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    MessageBox.Show("Vui lòng chọn 1 User!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
                     return;
                 }
                 User user = new User

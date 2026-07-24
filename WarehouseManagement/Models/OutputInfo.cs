@@ -1,15 +1,17 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
 
 namespace WarehouseManagement.Models;
 
 public partial class OutputInfo
 {
-    public string Id { get; set; } = null!;
+    public int Id { get; set; }
 
-    public string IdObject { get; set; } = null!;
+    public int IdObject { get; set; }
 
-    public string IdInputInfo { get; set; } = null!;
+    public int IdOutputInfo { get; set; }
 
     public int IdCustomer { get; set; }
 
@@ -17,9 +19,11 @@ public partial class OutputInfo
 
     public string? Status { get; set; }
 
+    public double? PriceOutput { get; set; }
+
     public virtual Customer IdCustomerNavigation { get; set; } = null!;
 
-    public virtual InputInfo IdInputInfoNavigation { get; set; } = null!;
-
     public virtual Object IdObjectNavigation { get; set; } = null!;
+
+    public virtual Output IdOutputInfoNavigation { get; set; } = null!;
 }

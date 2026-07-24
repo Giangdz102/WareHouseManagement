@@ -48,7 +48,7 @@ namespace WarehouseManagement.ViewModel
                 var exitAccount = qlk.Users.FirstOrDefault(u => u.UserName == user.UserName);
                 if (exitAccount != null)
                 {
-                    MessageBox.Show("Tài khoản đã tồn tại!", "Thêm đơn vị thất bại", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("Tài khoản đã tồn tại!", "Thêm tài khoản thất bại", MessageBoxButton.OK, MessageBoxImage.Information);
                     return;
                 }
                 qlk.Users.Add(user);
@@ -56,7 +56,7 @@ namespace WarehouseManagement.ViewModel
             }
             catch (Exception ex)
             {
-                throw new Exception("Error adding unit: " + ex.Message);
+                throw new Exception("Error adding user: " + ex.Message);
             }
 
         }

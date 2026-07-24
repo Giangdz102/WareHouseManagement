@@ -1,15 +1,15 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace WarehouseManagement.Models;
 
 public partial class InputInfo
 {
-    public string Id { get; set; } = null!;
+    public int Id { get; set; }
 
-    public string IdObject { get; set; } = null!;
+    public int IdObject { get; set; }
 
-    public string IdInput { get; set; } = null!;
+    public int IdInput { get; set; }
 
     public int? Count { get; set; }
 
@@ -23,5 +23,4 @@ public partial class InputInfo
 
     public virtual Object IdObjectNavigation { get; set; } = null!;
 
-    public virtual ICollection<OutputInfo> OutputInfos { get; set; } = new List<OutputInfo>();
 }

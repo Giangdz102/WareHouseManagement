@@ -34,6 +34,7 @@
                 <WrapPanel Margin="0 0 0 10">
                     <TextBox VerticalAlignment="Center"
                              Margin="5 5 15 5"
+                             x:Name="txtObjectName"
                              Text="{Binding SelectedItem.DisplayName, ElementName=LvObject}"
                              materialDesign:HintAssist.Hint="Tên vật tư"
                              Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
@@ -53,11 +54,13 @@
                               Style="{StaticResource MaterialDesignFloatingHintComboBox}"></ComboBox>
                     <TextBox VerticalAlignment="Center"
                              Margin="5 5 15 5"
+                             x:Name="txtQRCode"
                              Text="{Binding SelectedItem.Qrcode, ElementName=LvObject}"
                              materialDesign:HintAssist.Hint="QRCode"
                              Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
                     <TextBox VerticalAlignment="Center"
                              Margin="5 5 15 5"
+                             x:Name="txtBarCode"
                              Text="{Binding SelectedItem.BarCode, ElementName=LvObject}"
                              materialDesign:HintAssist.Hint="BarCode"
                              Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
@@ -72,15 +75,18 @@
                     <Button Content="Thêm"
                             Command="{Binding AddCommand}"
                             Margin="5"
-                            Width="100"></Button>
+                            Width="100"
+                            Click="Button_Click"></Button>
                     <Button Content="Sửa"
                             Command="{Binding EditCommand}"
                             Margin="5"
-                            Width="100"></Button>
+                            Width="100"
+                            Click="Button_Click_1"></Button>
                     <Button Content="Xóa"
                             Command="{Binding DeleteCommand}"
                             Margin="5"
-                            Width="100"></Button>
+                            Width="100"
+                            Click="Button_Click_2"></Button>
                 </WrapPanel>
             </materialDesign:Card>
 
@@ -101,7 +107,7 @@
                                 <GridViewColumn Header="Nhà cung cấp"
                                                 DisplayMemberBinding="{Binding IdSuplierNavigation.DisplayName}"></GridViewColumn>
                                 <GridViewColumn Header="QRCode"
-                                                DisplayMemberBinding="{Binding QRCode}"></GridViewColumn>
+                                                DisplayMemberBinding="{Binding Qrcode}"></GridViewColumn>
                                 <GridViewColumn Header="BarCode"
                                                 DisplayMemberBinding="{Binding BarCode}"></GridViewColumn>
                                 

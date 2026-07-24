@@ -23,13 +23,13 @@ namespace WarehouseManagement.ViewModel
 
                 if (extitEmail != null)
                     {
-                        MessageBox.Show("Email đã tồn tại!", "Thêm đơn vị thất bại", MessageBoxButton.OK, MessageBoxImage.Information);
+                        MessageBox.Show("Email đã tồn tại!", "Thêm Email thất bại", MessageBoxButton.OK, MessageBoxImage.Information);
                         return;
                     }
                 var extitPhone = qlk.Customers.FirstOrDefault(c => c.Phone == customer.Phone);
                 if (extitPhone != null)
                     {
-                        MessageBox.Show("Số điện thoại đã tồn tại!", "Thêm đơn vị thất bại", MessageBoxButton.OK, MessageBoxImage.Information);
+                        MessageBox.Show("Số điện thoại đã tồn tại!", "Thêm số điện thoại thất bại", MessageBoxButton.OK, MessageBoxImage.Information);
                         return;
                     }
                         qlk.Customers.Add(customer);

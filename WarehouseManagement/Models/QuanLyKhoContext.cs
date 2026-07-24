@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
@@ -58,7 +58,6 @@ public partial class QuanLyKhoContext : DbContext
 
             entity.ToTable("Input");
 
-            entity.Property(e => e.Id).HasMaxLength(128);
             entity.Property(e => e.DateInput).HasColumnType("datetime");
         });
 
@@ -68,9 +67,6 @@ public partial class QuanLyKhoContext : DbContext
 
             entity.ToTable("InputInfo");
 
-            entity.Property(e => e.Id).HasMaxLength(128);
-            entity.Property(e => e.IdInput).HasMaxLength(128);
-            entity.Property(e => e.IdObject).HasMaxLength(128);
             entity.Property(e => e.InputPrice).HasDefaultValue(0.0);
             entity.Property(e => e.OutputPrice).HasDefaultValue(0.0);
 
@@ -91,7 +87,6 @@ public partial class QuanLyKhoContext : DbContext
 
             entity.ToTable("Object");
 
-            entity.Property(e => e.Id).HasMaxLength(128);
             entity.Property(e => e.Qrcode).HasColumnName("QRCode");
 
             entity.HasOne(d => d.IdSuplierNavigation).WithMany(p => p.Objects)
@@ -111,7 +106,6 @@ public partial class QuanLyKhoContext : DbContext
 
             entity.ToTable("Output");
 
-            entity.Property(e => e.Id).HasMaxLength(128);
             entity.Property(e => e.DateOutput).HasColumnType("datetime");
         });
 
@@ -121,29 +115,25 @@ public partial class QuanLyKhoContext : DbContext
 
             entity.ToTable("OutputInfo");
 
-            entity.Property(e => e.Id).HasMaxLength(128);
-            entity.Property(e => e.IdInputInfo).HasMaxLength(128);
-            entity.Property(e => e.IdObject).HasMaxLength(128);
+            entity.Property(e => e.IdOutputInfo).HasColumnName("IdOutputInfo");
 
-            
-            entity.HasOne<Customer>()
-                .WithMany()
+            entity.HasOne(d => d.IdCustomerNavigation)
+                .WithMany(p => p.OutputInfos)
                 .HasForeignKey(d => d.IdCustomer)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__OutputInf__IdCus__4E88ABD4");
+                .HasConstraintName("FK__OutputInf__IdCus__4F7CD00D");
 
-            
-            entity.HasOne<Object>()
-                .WithMany()
+            entity.HasOne(d => d.IdObjectNavigation)
+                .WithMany(p => p.OutputInfos)
                 .HasForeignKey(d => d.IdObject)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__OutputInf__IdObj__5070F446");
 
-            
-            entity.HasOne<Output>()
+            entity.HasOne(d => d.IdOutputInfoNavigation)
                 .WithMany()
-                .HasForeignKey(d => d.Id)
-                .OnDelete(DeleteBehavior.ClientSetNull);
+                .HasForeignKey(d => d.IdOutputInfo)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_OutputInfo_Output");
         });
 
         modelBuilder.Entity<Suplier>(entity =>

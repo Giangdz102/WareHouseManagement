@@ -5,7 +5,7 @@ namespace WarehouseManagement.Models;
 
 public partial class Object
 {
-    public string Id { get; set; } = null!;
+    public int Id { get; set; }
 
     public string? DisplayName { get; set; }
 
